@@ -1,0 +1,11 @@
+version: 2
+updates:
+  # Configuration for package dependencies
+  - package-ecosystem: "npm" # Change to your package manager (e.g., "maven", "python", "docker", etc.)
+    directory: "/" # Directory where your dependency files are located
+    schedule:
+      interval: "daily" # Options: "daily", "weekly", "monthly"
+  - package-ecosystem: "docker"
+    directory: "/" # Directory where your Dockerfiles are located
+    schedule:
+      interval: "weekly"
